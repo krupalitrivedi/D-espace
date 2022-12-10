@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Web3-Space</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="345.png" id="mountains_behind">
+            <h2 id="text">Web3 Space</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="234-1.png" id="mountains_front">
+
+        </section>
+        <div class="sec" id="sec">
+            <h2>Start here</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptatibus sunt dicta vitae officia soluta omnis, perferendis atque placeat inventore, possimus ipsa numquam dolorum corrupti maxime aperiam rerum? Placeat, pariatur architecto. Quisquam quia temporibus incidunt.</p>
+            <p>
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim vel ratione inventore eligendi nemo vitae modi beatae nostrum iure a fugiat quo tempore provident aspernatur facere, tenetur iusto assumenda consequuntur?
+            </p>
+        </div>
+        
+        <script>
+            let moon= document.getElementById('moon');
+            let stars= document.getElementById('stars');
+            let mountains_behind= document.getElementById('mountains_behind');
+            let mountains_front= document.getElementById('mountains_front');
+            let text= document.getElementById('text');
+            let btn= document.getElementById('btn');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.5 + 'px';
+                moon.style.marginLeft = value * -0.25 + 'px';
+                moon.style.top = value * 2 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 2 + 'px';
+                header.style.top = value * 0.5 + 'px';
+
+            })
+        </script>
+    </body>
+</html>
