@@ -128,9 +128,9 @@ header ul li a.active{
     width: 100%;
     height: 120vh;
     padding: 100px;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     overflow: hidden;
 }
 #sec-2::before{
@@ -155,24 +155,31 @@ header ul li a.active{
 #sec-2 img#p1{
     height: 800px;
     width: 800px;
+    
     position: absolute;
-    left: 10em;
-    top: -10em;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
 }
-#sec-2 img#sp1{
+img#sp1{
     height: 500px;
     width: 500px;
     position: absolute;
-    left: 28em;
-    top: 4em;
+    left: 10em;
+    top: 10em;
 }
 
-#sec-2 img#p2{
+img#p2{
     height: 800px;
     width: 800px;
-    position: absolute;
-    left: 80em;
-    top: 30em;
+
+    flex-direction: row-reverse;
+    margin-right: -80em;
+    position: relative;
+    justify-content: flex-end;
+    align-self: flex-end;
+    
+
     
 }
 
@@ -213,7 +220,7 @@ header ul li a.active{
 }
 
 
-.sec{
+/* .sec{
     position: relative;
     padding: 100px;
     background: #1c0522;
@@ -227,4 +234,4 @@ header ul li a.active{
 .sec p{
     font-size: 1em;
     color: #fff;
-}
+} */
