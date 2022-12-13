@@ -59,7 +59,7 @@ header ul li a.active{
     background-color: #fff;
     color: #2b1055;
 }
-section{
+#sec-1{
     position: relative;
     width: 100%;
     height: 120vh;
@@ -69,16 +69,16 @@ section{
     align-items: center;
     overflow: hidden;
 }
-section::before{
+#sec-1::before{
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #1c0522,transparent);
+    background: linear-gradient(to top, #2b1055,transparent);
     z-index: 1000;
 }
-section img{
+#sec-1 img{
     position: absolute;
     top: 0;
     left: 0;
@@ -87,13 +87,13 @@ section img{
     object-fit: cover;
     pointer-events: none;
 }
-section img#moon{
+#sec-1 img#moon{
     position: absolute;
-    top: 100px;
+    
     mix-blend-mode: screen;
 
 }
-section img#mountains_front{
+#sec-1 img#mountains_front{
 
     position: absolute;
     left: 2px;
@@ -122,7 +122,117 @@ section img#mountains_front{
     transform: translateY(100px);
 
 }
-.sec{
+#sec-2{
+    background: linear-gradient(#2b1055, #7597de);
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    padding: 100px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+}
+#sec-2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #2b1055,transparent);
+    z-index: 1000;
+}
+#sec-2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+#sec-2 img#p1{
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    top: -10vh;
+    left: 1vh;
+    
+}
+#sec-2 img#sp1{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 10vh;
+    left: 20vh;
+    
+    animation: move 4s ease 2s infinite alternate none;
+
+}
+@keyframes move {
+    0% {top: 10vh; left: 20vh}
+    20% {top: 18vh; left: 35vh}
+    40% {top: 24vh; left: 45vh}
+    40% {top: 30vh; left: 55vh}
+    50% {top: 32vh; left: 59vh}
+    70% {top: 36vh; left: 62vh}
+    80%{top: 38vh; left: 69vh}
+    90%{top: 39vh; left: 85vh}
+    100%{top: 42vh; left: 105vh}
+    
+
+}
+
+img#p2{
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    left: 110vh;
+    top: 30vh;
+    
+
+    
+}
+
+#sec-3{
+    background: linear-gradient(#2b1055, #7597de);
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#sec-3 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#sec-3 img#p3{
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    left: 10em;
+    top: 30em;
+}
+#sec-3 img#p4{
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    left: 80em;
+    top: 0em;
+    
+}
+
+
+/* .sec{
     position: relative;
     padding: 100px;
     background: #1c0522;
@@ -136,4 +246,4 @@ section img#mountains_front{
 .sec p{
     font-size: 1em;
     color: #fff;
-}
+} */
